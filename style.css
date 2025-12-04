@@ -1,0 +1,156 @@
+/* BLACK EDITION – FastFood Telegram WebApp */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #000000;
+  color: #e0e0e0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 32px 0 16px;
+  background: linear-gradient(135deg, #ff2e63 0%, #08d9d6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 24px 0 12px;
+  color: #08d9d6;
+}
+
+p {
+  margin: 8px 0;
+  color: #b3b3b3;
+}
+
+button {
+  background: linear-gradient(135deg, #ff2e63 0%, #08d9d6 100%);
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 24px rgba(255, 46, 99, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(255, 46, 99, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 16px rgba(255, 46, 99, 0.3);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  max-width: 420px;
+  background: #111111;
+  border: 1px solid #222222;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  margin: 8px 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border-color: #08d9d6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(8, 217, 214, 0.25);
+}
+
+section {
+  width: 100%;
+  max-width: 480px;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 16px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+#total {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ff2e63;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 40px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
