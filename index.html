@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8"/>
+  <title>FastFood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <h2>FastFood</h2>
+  <section>
+    <button id="getLoc">📍 Manzilni aniqlash</button>
+    <p id="locStatus"></p>
+  </section>
+
+  <section id="menuSec" hidden>
+    <h3>Menyu</h3>
+    <div id="menu"></div>
+  </section>
+
+  <section id="cartSec" hidden>
+    <h3>Savat</h3>
+    <ul id="cartList"></ul>
+    <p>Jami: <span id="total">0</span> so‘m</p>
+    <button id="toCheckout">Rasmiylashtirish</button>
+  </section>
+
+  <section id="paySec" hidden>
+    <p>Karta: <strong>8600123456789012</strong></p>
+    <p>Shu kartaga pul o‘tkazing va chekni yuklang:</p>
+    <input type="file" id="checkFile" accept="image/*">
+    <button id="uploadCheck">Yuborish</button>
+    <p id="payStatus"></p>
+  </section>
+
+  <script src="js/customer.js"></script>
+</body>
+</html>
